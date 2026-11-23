@@ -13,11 +13,11 @@ import (
 
 	"github.com/go-chi/chi/v5"
 
-	"github.com/yundera/auth-console/internal/access"
-	"github.com/yundera/auth-console/internal/auth"
-	"github.com/yundera/auth-console/internal/gatectl"
-	"github.com/yundera/auth-console/internal/hostverb"
-	"github.com/yundera/auth-console/internal/pubkey"
+	"github.com/nsl-sh/auth-console/internal/access"
+	"github.com/nsl-sh/auth-console/internal/auth"
+	"github.com/nsl-sh/auth-console/internal/gatectl"
+	"github.com/nsl-sh/auth-console/internal/hostverb"
+	"github.com/nsl-sh/auth-console/internal/pubkey"
 )
 
 // ---- me ----------------------------------------------------------------------

@@ -26,7 +26,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/yundera/auth-console/internal/hostverb"
+	"github.com/nsl-sh/auth-console/internal/hostverb"
 )
 
 const (

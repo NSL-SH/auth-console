@@ -28,7 +28,7 @@ before the stack split).
 | `authelia` | `authelia/authelia:4.39.x` (never lowered) | `pcs` | `local-auth-${DOMAIN}` | Local credential store, password reset by mail, regulation, TOTP |
 | `auth-registrar` | `ghcr.io/yundera/mesh-auth` | `pcs`, internal gRPC net | — (`:9092`) | Creates each gate's Dex client over gRPC — the stack's public API to the box |
 | `auth-console` | `ghcr.io/yundera/appshield` | `pcs` | `auth-console-${DOMAIN}` | The gate: OIDC login, session cookie, signs `X-AppShield-Assertion`, revocation API |
-| `auth-console-app` | `ghcr.io/yundera/auth-console` | `pcs` | — (`expose: 8080` only) | UI + API. Docker socket, platform root read-only |
+| `auth-console-app` | `ghcr.io/nsl-sh/auth-console` | `pcs` | — (`expose: 8080` only) | UI + API. Docker socket, platform root read-only |
 | `auth-console-runner` | same image as the app | host namespaces | — | Not a compose service: created per host action, outside any project |
 
 The internal gRPC network (`dex-internal` on both templates; Yundera called it `yundera-auth` until 2026-10-01) holds only

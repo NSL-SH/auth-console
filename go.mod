@@ -1,4 +1,4 @@
-module github.com/yundera/auth-console
+module github.com/nsl-sh/auth-console
 
 go 1.25.0
 

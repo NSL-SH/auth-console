@@ -91,12 +91,12 @@ docker run --rm -v "$PWD":/src -w /src golang:1.25 sh -c 'go vet ./... && go tes
 docker run --rm -v "$PWD":/src -w /src/web node:22 sh -c 'npm install && npm run check && npm run build'
 
 # Image
-docker build -t ghcr.io/yundera/auth-console:dev --build-arg BUILD_VERSION=dev .
+docker build -t ghcr.io/nsl-sh/auth-console:dev --build-arg BUILD_VERSION=dev .
 
 # Run without a gate or a real host root
 docker run --rm -p 18080:8080 \
   -e DEV_IDENTITY=dev:admins -e AUTH_CONSOLE_ENV=development -e HOST_ROOT=/nonexistent/root \
-  ghcr.io/yundera/auth-console:dev
+  ghcr.io/nsl-sh/auth-console:dev
 ```
 
 `vite build` overwrites the tracked placeholder `internal/ui/dist/index.html`; restore it
@@ -107,7 +107,7 @@ fail harmlessly.
 
 ## Release
 
-GitHub Actions publishes `ghcr.io/yundera/auth-console` (amd64 + arm64) on pushes to
+GitHub Actions publishes `ghcr.io/nsl-sh/auth-console` (amd64 + arm64) on pushes to
 `main` and on `v*` tags. Bump by tagging (`v1.0.0` → `:1.0.0`), then move the pin in both
 templates' `stacks/auth/docker-compose.yml`. **Publish the tag before moving a pin** — a
 missing tag makes every self-check spend minutes in the pull backoff.

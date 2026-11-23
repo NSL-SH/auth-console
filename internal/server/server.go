@@ -19,13 +19,13 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 
-	"github.com/yundera/auth-console/internal/auth"
-	"github.com/yundera/auth-console/internal/config"
-	"github.com/yundera/auth-console/internal/dockerx"
-	"github.com/yundera/auth-console/internal/envfile"
-	"github.com/yundera/auth-console/internal/gatectl"
-	"github.com/yundera/auth-console/internal/hostverb"
-	"github.com/yundera/auth-console/internal/pubkey"
+	"github.com/nsl-sh/auth-console/internal/auth"
+	"github.com/nsl-sh/auth-console/internal/config"
+	"github.com/nsl-sh/auth-console/internal/dockerx"
+	"github.com/nsl-sh/auth-console/internal/envfile"
+	"github.com/nsl-sh/auth-console/internal/gatectl"
+	"github.com/nsl-sh/auth-console/internal/hostverb"
+	"github.com/nsl-sh/auth-console/internal/pubkey"
 )
 
 // Version is set at build time (-ldflags "-X .../server.Version=...").

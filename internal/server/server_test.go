@@ -11,9 +11,9 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/yundera/auth-console/internal/auth"
-	"github.com/yundera/auth-console/internal/config"
-	"github.com/yundera/auth-console/internal/dockerx"
+	"github.com/nsl-sh/auth-console/internal/auth"
+	"github.com/nsl-sh/auth-console/internal/config"
+	"github.com/nsl-sh/auth-console/internal/dockerx"
 )
 
 // fakeRunner answers host verbs from a function of their argv.

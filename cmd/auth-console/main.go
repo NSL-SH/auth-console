@@ -14,9 +14,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/yundera/auth-console/internal/config"
-	"github.com/yundera/auth-console/internal/server"
-	"github.com/yundera/auth-console/internal/ui"
+	"github.com/nsl-sh/auth-console/internal/config"
+	"github.com/nsl-sh/auth-console/internal/server"
+	"github.com/nsl-sh/auth-console/internal/ui"
 )
 
 func main() {
